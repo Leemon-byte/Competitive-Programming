@@ -1,26 +1,23 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main(){
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    string val = "Timur";
+    sort(val.begin(), val.end());
+    
     int tt; cin >> tt;
-    string temp = "Timur";
     while(tt--){
         int n; cin >> n;
-        string s; cin >> s;
-        if(n != 5){
-            cout << "NO\n";
-            continue;
-        }
-        int ans = 0;
-        for(int i=0; i<n;i++){
-            for(int j=0; j<n;j++){
-                if(temp[i] == s[j])
-                ans++;
-        }
+        string a; cin >> a;
+        sort(a.begin(), a.end());
+        if(a == val)
+        cout << "YES\n";
+        else 
+        cout << "NO\n";
     }
-    if(ans == 5)
-    cout << "YES\n";
-    else 
-    cout << "NO\n";
-    }
+
     return 0;
 }
