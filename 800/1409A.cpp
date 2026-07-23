@@ -4,7 +4,7 @@ using namespace std;
 void solve() {
     int a, b; cin >> a >> b;
     int d = abs(a-b);
-    cout << (d+9)/10 << "\n";
+    cout << (d+9)/10 << "\n"; // if 21 the 21 + 9 (3) // floor funtion
 }
 
 int main() {
