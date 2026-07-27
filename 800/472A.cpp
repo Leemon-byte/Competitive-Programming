@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// the most optimized way of finding prime number
 bool isPrime(int n){
     if(n <= 1)
     return false;
