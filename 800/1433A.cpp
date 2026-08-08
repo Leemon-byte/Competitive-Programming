@@ -5,7 +5,7 @@ void solve(){
     int x; cin >> x;
     // convert into string 
     string s = to_string(x);
-
+    // -0 because it stores the ASCII value instead of digit
     int p = s[0] - '0'; // p * the sum
     p--; 
     int ans = 0;
