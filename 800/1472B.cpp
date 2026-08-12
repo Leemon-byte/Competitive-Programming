@@ -14,14 +14,14 @@ void solve(){
         else 
         b++;
     }
-    
+
     int t = a*1 + b*2;
-    if(t%2 != 0){
+    if(t%2 != 0){ // odd number cannot be divided into equal parts
         cout << "NO\n";
         return;
     }
     else{
-        int h = t/2;
+        int h = t/2; // 
         if(h%2 == 0 || a > 1){
             cout << "YES\n";
         }
