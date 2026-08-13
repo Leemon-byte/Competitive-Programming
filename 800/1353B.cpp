@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// greedy solution
 void solve(){
     int n, k; cin >> n >> k;
     vector<int> v(n), vec(n);
@@ -9,9 +10,9 @@ void solve(){
     for(int i=0; i<n;i++)
     cin >> vec[i];
 
-    sort(v.begin(), v.end());
-    sort(vec.begin(), vec.end(), greater<int>());
-
+    sort(v.begin(), v.end()); // asending 
+    sort(vec.begin(), vec.end(), greater<int>()); // desending
+    // swaps smallest with the largest
     for(int i=0; i<n && i<k; i++){
         if(v[i] < vec[i]){
             // swap the elements
@@ -20,6 +21,7 @@ void solve(){
             vec[i] = temp;
         }
     }
+    // maximum sum 
     int sum = 0;
     for(int i=0; i<n;i++)
     sum += v[i];
